@@ -16,7 +16,7 @@
 
     --color-canvas: #1e2128;
 
-    --span: #a0a0a0;
+    --color-span: #a0a0a0;
     --color-shadow: #464646;
 
     --hero-cards-inline: 2;
@@ -49,6 +49,27 @@
     }
     img {
         @apply h-full w-full object-cover select-none;
+    }
+    button {
+        @apply cursor-pointer;
+    }
+    a {
+        @apply cursor-pointer;
+    }
+    input {
+        @apply cursor-text;
+    }
+    textarea {
+        @apply cursor-text;
+    }
+    select {
+        @apply cursor-pointer;
+    }
+    ul {
+        @apply list-none;
+    }
+    li {
+        @apply list-none;
     }
 
     .content-padding {
