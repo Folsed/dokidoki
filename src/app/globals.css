@@ -1,15 +1,90 @@
 @import 'tailwindcss';
 
-:root {
-}
+@theme {
+    --background: #000000;
 
-@theme inline {
-}
+    --color-font: #dadada;
+    --color-font-hover: #ffffff;
 
-@media (prefers-color-scheme: dark) {
-    :root {
+    --color-primary: #1e2128;
+    --color-primary-hover: #272c36;
+    --color-primary-active: #16181d;
+
+    --color-secondary: #76b900;
+    --color-secondary-hover: #80c900;
+    --color-secondary-active: #659e02;
+
+    --color-canvas: #1e2128;
+
+    --color-span: #a0a0a0;
+    --color-shadow: #464646;
+
+    --hero-cards-inline: 2;
+    --hero-cards-col-gap: 0.2rem;
+
+    --animate-progress: progress 10s linear;
+
+    @keyframes progress {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(100%);
+        }
     }
 }
 
-body {
+@layer base {
+    html {
+        color: var(--color-font);
+        background-color: var(--background);
+    }
+    * {
+        @apply box-border border-transparent;
+    }
+    svg {
+        @apply h-fit w-fit fill-inherit stroke-inherit;
+    }
+    img {
+        @apply h-full w-full object-cover select-none;
+    }
+    button {
+        @apply cursor-pointer;
+    }
+    a {
+        @apply cursor-pointer;
+    }
+    input {
+        @apply cursor-text;
+    }
+    textarea {
+        @apply cursor-text;
+    }
+    select {
+        @apply cursor-pointer;
+    }
+    ul {
+        @apply list-none;
+    }
+    li {
+        @apply list-none;
+    }
+
+    .content-padding {
+        @apply px-[1rem] sm:px-[2rem] lg:px-[3rem] xl:px-[4rem] 2xl:px-[5rem];
+    }
+
+    .carousel-margin {
+        @apply -mx-[1.2rem] sm:-mx-[2.2rem] lg:-mx-[3.2rem] xl:-mx-[4.2rem] 2xl:-mx-[5.2rem];
+    }
+
+    .padding-left {
+        @apply pl-[1rem] sm:pl-[2rem] lg:pl-[3rem] xl:pl-[4rem] 2xl:pl-[5rem];
+    }
+
+    .cards-carousel-scroll-padding {
+        @apply scroll-p-[1rem] sm:scroll-p-[2rem] lg:scroll-p-[3rem] xl:scroll-p-[4rem] 2xl:scroll-p-[5rem];
+    }
 }

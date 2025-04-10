@@ -1,4 +1,10 @@
-const Home = () => {
-    return <div>Home</div>
+import HeroCarousel from './components/HeroCarousel/HeroCarousel'
+
+const WelcomePage = () => {
+    return (
+        <>
+            <HeroCarousel />
+        </>
+    )
 }
-export default Home
+export default WelcomePage
