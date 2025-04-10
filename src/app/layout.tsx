@@ -6,7 +6,6 @@ const rubik = Rubik({
     subsets: ['latin'],
 })
 
-
 export const metadata: Metadata = {
     title: 'Dokidoki',
     description:
@@ -20,11 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang='en'>
-            <body
-                className={`${rubik.className} antialiased`}
-            >
-                {children}
-            </body>
+            <body className={`${rubik.className} antialiased`}>{children}</body>
         </html>
     )
 }

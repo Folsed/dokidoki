@@ -7,5 +7,5 @@ export interface Slide {
     synopsis: string
     logo: string | StaticImageData
     genres: string[]
-    mobile:  StaticImageData
+    mobile: StaticImageData
 }

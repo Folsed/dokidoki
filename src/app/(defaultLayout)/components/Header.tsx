@@ -9,7 +9,7 @@ import { Logo } from '@/app/assets/svg/Logo'
 
 const Header = () => {
     return (
-        <header className='bg-primary fixed z-50 flex h-[60px] w-full justify-center top-0'>
+        <header className='bg-primary fixed top-0 z-50 flex h-[60px] w-full justify-center'>
             <div className='content-padding flex w-full justify-between max-md:p-0'>
                 <div className='flex h-full'>
                     <Button className='fill-font hover:bg-primary-active hover:fill-font-hover hover:text-font-hover flex h-full cursor-pointer items-center rounded-none px-4 text-[16px] font-normal duration-200 md:hidden'>

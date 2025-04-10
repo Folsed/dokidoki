@@ -17,11 +17,11 @@ const CarouselNavigation: React.FC<CarouselNavigationProps> = ({
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`relative h-2 overflow-hidden rounded-lg bg-zinc-700  duration-200 md:hover:bg-secondary-hover ${index === currentIndex ? 'w-12' : 'w-6'} `}
+                        className={`md:hover:bg-secondary-hover relative h-2 overflow-hidden rounded-lg bg-zinc-700 duration-200 ${index === currentIndex ? 'w-12' : 'w-6'} `}
                         onClick={() => updateIndex(index)}
                     >
                         <span
-                            className={`h-full w-full -translate-x-full animate-progress rounded-lg bg-secondary opacity-0 ${index === currentIndex ? 'block' : 'hidden'}`}
+                            className={`animate-progress bg-secondary h-full w-full -translate-x-full rounded-lg opacity-0 ${index === currentIndex ? 'block' : 'hidden'}`}
                             onAnimationEnd={() => updateIndex(currentIndex + 1)}
                         ></span>
                     </button>

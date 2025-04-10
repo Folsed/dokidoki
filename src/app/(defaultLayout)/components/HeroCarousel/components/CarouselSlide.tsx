@@ -22,7 +22,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
         >
             <div className='content-padding'>
                 <div className='grid aspect-[1/1.15] w-full grid-cols-[repeat(12,_1fr)] grid-rows-[1fr,_auto] content-end items-end gap-x-[0.625rem] md:aspect-[20/7] md:gap-[1.25rem] lg:gap-[1.875rem] lg:pt-[1.25rem]'>
-                    <div className='pointer-events-none absolute left-0 top-0 -z-10 aspect-[2/3] w-full min-w-full md:aspect-[16/9]'>
+                    <div className='pointer-events-none absolute top-0 left-0 -z-10 aspect-[2/3] w-full min-w-full md:aspect-[16/9]'>
                         <picture>
                             <source
                                 media='(max-width: 768px)'
@@ -30,7 +30,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
                             />
                             <Image src={slide.src} alt={slide.title} priority />
                         </picture>
-                        <div className='absolute inset-0 block aspect-[inherit] bg-gradient-to-b from-transparent to-black md:bg-hero-carousel'></div>
+                        <div className='md:bg-hero-carousel absolute inset-0 block aspect-[inherit] bg-gradient-to-b from-transparent to-black'></div>
                     </div>
                     <div className='hero_logo col-[4/span_6] row-start-1 grid md:col-[1/span_4] lg:col-[1/span_3]'>
                         <Link href={'/'}>
@@ -44,7 +44,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
                         </Link>
                     </div>
                     <div className='hero_meta col-[1/span_12] text-center md:col-[1/span_4] md:text-left'>
-                        <span className='mt-2 inline-block max-w-full overflow-hidden text-ellipsis whitespace-nowrap text-span'>
+                        <span className='text-span mt-2 inline-block max-w-full overflow-hidden text-ellipsis whitespace-nowrap'>
                             {slide.genres.map((item, index) => {
                                 return (
                                     item +
@@ -58,15 +58,15 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
                             {slide.synopsis}
                         </p>
                     </div>
-                    <div className='hero_actions col-[1/span_12] row-start-3 flex  gap-3 sm:col-[3/span_8] md:col-[1/span_3] lg:col-[1/span_2]'>
+                    <div className='hero_actions col-[1/span_12] row-start-3 flex gap-3 sm:col-[3/span_8] md:col-[1/span_3] lg:col-[1/span_2]'>
                         <ThemeButton
-                            className='h-10 w-fit flex-1 whitespace-nowrap bg-secondary fill-transparent stroke-black px-4 duration-200 hover:bg-secondary-hover active:bg-secondary-active lg:max-w-fit'
+                            className='bg-secondary hover:bg-secondary-hover active:bg-secondary-active h-10 w-fit flex-1 fill-transparent stroke-black px-4 whitespace-nowrap duration-200 lg:max-w-fit'
                             placeholder='Почати перегляд'
                             link={'/profile'}
                             icon={<FiPlay size={28} />}
                         />
                         <ThemeButton
-                            className='border-2 border-secondary bg-[#00000035] px-1 text-secondary duration-200 hover:text-secondary-hover active:text-secondary-active'
+                            className='border-secondary text-secondary hover:text-secondary-hover active:text-secondary-active border-2 bg-[#00000035] px-1 duration-200'
                             icon={<RxBookmark size={28} />}
                         />
                     </div>

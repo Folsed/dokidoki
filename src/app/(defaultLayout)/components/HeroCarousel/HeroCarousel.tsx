@@ -7,13 +7,9 @@ import mobile1 from '@/_dev/imgs/crunch-mobile.jpg'
 import mobile2 from '@/_dev/imgs/shangri-la-mobile.jpg'
 import mobile3 from '@/_dev/imgs/solo-mobile.jpg'
 
-
-
 import logo1 from '@/_dev/imgs/slol-logo.webp'
 import logo2 from '@/_dev/imgs/metalic-logo.webp'
 
-import Image from 'next/image'
-import CarouselSlide from './components/CarouselSlide'
 import CarouselLogic from './components/CarouselLogic'
 import { Slide } from '@/types/carousel.types'
 
