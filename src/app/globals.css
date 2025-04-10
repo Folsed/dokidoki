@@ -1,15 +1,59 @@
 @import 'tailwindcss';
 
-:root {
+@theme {
+    --background: #000000;
+
+    --color-font: #dadada;
+    --color-font-hover: #ffffff;
+
+    --color-primary: #1e2128;
+    --color-primary-hover: #272c36;
+    --color-primary-active: #16181d;
+
+    --color-secondary: #76b900;
+    --color-secondary-hover: #80c900;
+    --color-secondary-active: #659e02;
+
+    --color-canvas: #1e2128;
+
+    --span: #a0a0a0;
+    --color-shadow: #464646;
+
+    --hero-cards-inline: 2;
+    --hero-cards-col-gap: 0.2rem;
 }
 
-@theme inline {
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
     :root {
     }
-}
 
-body {
+    @media (min-width: 30rem) {
+        :root {
+            --hero-cards-inline: 3;
+        }
+    }
+
+    @media (min-width: 48rem) {
+        :root {
+            --hero-cards-inline: 4;
+        }
+    }
+
+    @media (min-width: 84rem) {
+        :root {
+            --hero-cards-inline: 5;
+        }
+    }
+
+    @media (min-width: 100rem) {
+        :root {
+            --hero-cards-inline: 6;
+        }
+    }
+
+    @media (min-width: 140rem) {
+        :root {
+            --hero-cards-inline: 7;
+        }
+    }
 }
