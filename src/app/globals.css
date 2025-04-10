@@ -24,36 +24,8 @@
 }
 
 @layer base {
-    :root {
-    }
-
-    @media (min-width: 30rem) {
-        :root {
-            --hero-cards-inline: 3;
-        }
-    }
-
-    @media (min-width: 48rem) {
-        :root {
-            --hero-cards-inline: 4;
-        }
-    }
-
-    @media (min-width: 84rem) {
-        :root {
-            --hero-cards-inline: 5;
-        }
-    }
-
-    @media (min-width: 100rem) {
-        :root {
-            --hero-cards-inline: 6;
-        }
-    }
-
-    @media (min-width: 140rem) {
-        :root {
-            --hero-cards-inline: 7;
-        }
+    html {
+        color: var(--color-font);
+        background-color: var(--background);
     }
 }

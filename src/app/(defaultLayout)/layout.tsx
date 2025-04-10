@@ -4,7 +4,7 @@ const DefaultLayout = ({ children }: { children: React.ReactNode }) => {
     return (
         <section className='__content'>
             <Header />
-            {children}
+            <main className='mt-[60px]'>{children}</main>
         </section>
     )
 }
