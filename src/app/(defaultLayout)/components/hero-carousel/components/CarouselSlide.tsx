@@ -66,6 +66,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
                             icon={<FiPlay size={28} />}
                         />
                         <ThemeButton
+                            link={'/profile'}
                             className='border-secondary text-secondary hover:text-secondary-hover active:text-secondary-active border-2 bg-[#00000035] px-1 duration-200'
                             icon={<RxBookmark size={28} />}
                         />
