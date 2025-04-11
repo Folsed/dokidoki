@@ -30,7 +30,7 @@ const Header = () => {
                         </Button>
 
                         <Link
-                            href={''}
+                            href={'/'}
                             className='hover:bg-primary-active hover:text-font-hover flex items-center px-2 duration-200'
                         >
                             Новини
