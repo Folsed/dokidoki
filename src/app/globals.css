@@ -24,6 +24,8 @@
 
     --animate-progress: progress 10s linear;
 
+    --content-inline-padding: 1rem;
+
     @keyframes progress {
         0% {
             opacity: 1;
@@ -71,20 +73,91 @@
     li {
         @apply list-none;
     }
+}
 
-    .content-padding {
-        @apply px-[1rem] sm:px-[2rem] lg:px-[3rem] xl:px-[4rem] 2xl:px-[5rem];
+@utility content-padding {
+    @apply px-[1rem] sm:px-[2rem] lg:px-[3rem] xl:px-[4rem] 2xl:px-[5rem];
+}
+
+@utility carousel-margin {
+    @apply -mx-[1.2rem] sm:-mx-[2.2rem] lg:-mx-[3.2rem] xl:-mx-[4.2rem] 2xl:-mx-[5.2rem];
+}
+
+@utility padding-left {
+    @apply pl-[1rem] sm:pl-[2rem] lg:pl-[3rem] xl:pl-[4rem] 2xl:pl-[5rem];
+}
+
+@utility cards-carousel-scroll-padding {
+    @apply scroll-p-[1rem] sm:scroll-p-[2rem] lg:scroll-p-[3rem] xl:scroll-p-[4rem] 2xl:scroll-p-[5rem];
+}
+
+@utility no-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
     }
+}
 
-    .carousel-margin {
-        @apply -mx-[1.2rem] sm:-mx-[2.2rem] lg:-mx-[3.2rem] xl:-mx-[4.2rem] 2xl:-mx-[5.2rem];
+@utility no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media (min-width: 30rem) {
+    :root {
+        --hero-cards-inline: 3;
     }
+}
 
-    .padding-left {
-        @apply pl-[1rem] sm:pl-[2rem] lg:pl-[3rem] xl:pl-[4rem] 2xl:pl-[5rem];
+@media (min-width: 48rem) {
+    :root {
+        --hero-cards-inline: 4;
     }
+}
 
-    .cards-carousel-scroll-padding {
-        @apply scroll-p-[1rem] sm:scroll-p-[2rem] lg:scroll-p-[3rem] xl:scroll-p-[4rem] 2xl:scroll-p-[5rem];
+@media (min-width: 84rem) {
+    :root {
+        --hero-cards-inline: 5;
+    }
+}
+
+@media (min-width: 100rem) {
+    :root {
+        --hero-cards-inline: 6;
+    }
+}
+
+@media (min-width: 140rem) {
+    :root {
+        --hero-cards-inline: 7;
+    }
+}
+
+@media (min-width: 640px) {
+    :root {
+        --content-inline-padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --content-inline-padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    :root {
+        --content-inline-padding: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    :root {
+        --content-inline-padding: 4rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    :root {
+        --content-inline-padding: 5rem;
     }
 }

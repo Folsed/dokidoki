@@ -5,7 +5,7 @@ const WelcomePage = () => {
     return (
         <div className='content grid grid-flow-row gap-y-24'>
             <HeroCarousel />
-            <CardsCarousel/>
+            <CardsCarousel />
         </div>
     )
 }

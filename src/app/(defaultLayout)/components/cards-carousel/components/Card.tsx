@@ -55,7 +55,7 @@ const Card: React.FC<CardProps> = ({ trackRef, cardData }) => {
             onMouseEnter={() => setHoverIsActive(true)}
             onMouseLeave={() => setHoverIsActive(false)}
         >
-            <div className='aspect-[3/4] md:aspect-video bg-primary'>
+            <div className='bg-primary aspect-[3/4] md:aspect-video'>
                 <picture>
                     <Image
                         src={cardData.src}

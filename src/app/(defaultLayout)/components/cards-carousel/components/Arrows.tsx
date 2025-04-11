@@ -47,25 +47,25 @@ const Arrows: React.FC<ArrowsProps> = ({ trackRef }) => {
     return (
         <div className='hidden md:block'>
             <div
-                className={`absolute left-0 top-0 z-[1] flex h-full items-center ${isActiveBack ? 'block' : 'hidden'}`}
+                className={`absolute top-0 left-0 z-[1] flex h-full items-center ${isActiveBack ? 'block' : 'hidden'}`}
             >
                 <button
-                    className='group h-full fill-span px-[calc((var(--content-inline-padding)-(1.5rem+var(--hero-cards-col-gap)))/2)] duration-200 hover:fill-font'
+                    className='group fill-span hover:fill-font h-full px-[calc((var(--content-inline-padding)-(1.5rem+var(--hero-cards-col-gap)))/2)] duration-200'
                     onClick={() => handleClick('')}
                 >
                     <MdArrowBackIosNew size={24} className='z-[1]' />
-                    <span className='via-34% absolute inset-0 -z-10 bg-gradient-to-l from-transparent via-[#000000d7] to-[#000000] opacity-50 duration-200 group-hover:opacity-80'></span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-l from-transparent via-[#000000d7] via-34% to-[#000000] opacity-50 duration-200 group-hover:opacity-80'></span>
                 </button>
             </div>
             <div
-                className={`absolute right-0 top-0 z-[1] flex h-full items-center ${isActiveForward ? 'block' : 'hidden'}`}
+                className={`absolute top-0 right-0 z-[1] flex h-full items-center ${isActiveForward ? 'block' : 'hidden'}`}
             >
                 <button
-                    className='group h-full fill-span px-[calc((var(--content-inline-padding)-(1.5rem+var(--hero-cards-col-gap)))/2)] duration-200 hover:fill-font'
+                    className='group fill-span hover:fill-font h-full px-[calc((var(--content-inline-padding)-(1.5rem+var(--hero-cards-col-gap)))/2)] duration-200'
                     onClick={() => handleClick('forward')}
                 >
                     <MdArrowForwardIos size={24} className='z-[1]' />
-                    <span className='via-34% absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-[#000000d7] to-[#000000] opacity-50 duration-200 group-hover:opacity-80'></span>
+                    <span className='absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-[#000000d7] via-34% to-[#000000] opacity-50 duration-200 group-hover:opacity-80'></span>
                 </button>
             </div>
         </div>

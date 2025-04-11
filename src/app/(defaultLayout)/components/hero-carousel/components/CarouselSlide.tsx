@@ -44,7 +44,7 @@ const CarouselSlide: React.FC<CarouselSlideProps> = ({
                         </Link>
                     </div>
                     <div className='hero_meta col-[1/span_12] text-center md:col-[1/span_4] md:text-left'>
-                        <span className='mix-blend-color-dodge mt-2 inline-block max-w-full overflow-hidden text-ellipsis whitespace-nowrap'>
+                        <span className='mt-2 inline-block max-w-full overflow-hidden text-ellipsis whitespace-nowrap mix-blend-color-dodge'>
                             {slide.genres.map((item, index) => {
                                 return (
                                     item +
